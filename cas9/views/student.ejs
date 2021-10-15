@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NAslov</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+    </head>
+    <body>
+        <h1> Podaci o studentu</h1>
+        
+        <p>Dobrodosli, <%= student.name %></p>
+        <p>Smer: <%= student.major %></p>
+
+        <form method="GET" action="/ispiti">
+            <input type="hidden" value="<%= student.username %>" name="username">
+            <button type="submit">Pogledajte rezultate ispita</button>
+        </form>
+
+        <h3>Izmenite podatke</h3>
+        <form method="POST" action="/student/update">
+            <input type="hidden" value="<%= student.username %>" name="username">
+            <div>
+                <label>Ime</label>
+                <input type="text" name="name"  value="<%= student.name %>">
+            </div>
+            <div>
+                <label>Lozinka</label>
+                <input type="password" name="password" value="<%= student.password %>">
+            </div>
+            <div>
+                <label>Smer</label>
+                <select name="major">
+                    <option value="Computer science">CS</option>
+                    <option value="mr">MR</option>
+                </select>
+                
+            </div>
+            <button type="submit">Izmeni podatke</button>
+        </form>
+        <h3>Obrisite podatke</h3>
+        <form method="POST" action="/student/delete/<%= student.username %>">
+            <div>
+                <label>Potvrdite lozinku</label>
+                <input type="password" name="password">
+            </div>
+            <button type="submit">Obrisi podatke</button>
+        </form>
+        
+       
+    </body>
+</html>

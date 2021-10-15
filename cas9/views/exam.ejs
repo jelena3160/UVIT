@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ispiti</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Ispiti za studenta <%= username %></h1>
+
+        <% if(exams.lenght == 0) { %>
+            <p>Student nije polagao ispite</p>
+        <% } else { %>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Predmet</th>
+                        <th>Datum</th>
+                        <th>Ocena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(const exam of exams) { %>
+                        <tr>
+                            <td><%= exam.subject %></td>
+                            <td><%= exam.date.getDay() %>.<%= exam.date.getMonth() + 1 %>.<%= exam.date.getFullYear() %>.</td>
+                            <td><%= exam.grade %></td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        <% } %>
+    </body>
+</html>
