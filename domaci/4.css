@@ -1,0 +1,31 @@
+figure{
+    display: inline-block;
+    border: 1px solid white;
+}
+figcaption{
+    font-family: sans-serif;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+}
+figure img{
+    height: 200px;
+    width: 300px;
+}
+#prva{
+    position: relative;
+}
+#druga {
+    position: absolute;
+    left: 302px;
+    top: 256px
+}
+#treca{
+    position: absolute;
+    left: 302px;
+    bottom: 256px;
+}
+#cetvrta{
+    position: absolute;
+    left: 302px;
+    top: 256px;
+}

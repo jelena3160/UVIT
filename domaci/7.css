@@ -1,0 +1,22 @@
+#omotac{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(to bottom, rgb(5,48,84), white);
+}
+#pahulje{
+    height: 200px;
+    background-image: url('pahulje.png');
+    background-size: 200px;
+    background-repeat: repeat-x;
+}
+#snesko{
+    position: relative;
+    top:300px;
+    bottom: 0px;
+    height: 400px;
+    background-image: url('snesko.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position:  bottom right;
+}

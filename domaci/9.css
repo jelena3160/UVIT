@@ -1,0 +1,42 @@
+body{
+    font-size: 20px;
+    font-family: 'Calibri', sans-serif;
+}
+table{
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+table, tr, td, th{
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+}
+tr th{
+    background-color: rgba(63,107,226, 0.4);
+}
+tr td{
+    background-color: rgba(92,236,255,0.4);
+}
+table caption{
+    caption-side: bottom;
+}
+caption::first-letter{
+    color: red;
+    font-style: italic;
+    font-size: 130%;
+}
+
+a:link{
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    cursor: help;
+    text-decoration: underline;
+}
+
+a:active{
+    font-size: 90%;
+}
+

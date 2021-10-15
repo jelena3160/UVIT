@@ -1,0 +1,30 @@
+body{
+    background-color: skyblue;
+    height: 1000px;
+}
+
+#naslovni{
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: 200px;
+    top: 0px;
+    left: 50%;
+    background-image: radial-gradient(circle at center, orange 0%, yellow 50%,
+    skyblue 50%, skyblue 100%);
+}
+#glavni{
+    height: 300px;
+    background-image: url('ptice.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
+    
+}
+#podnozje{
+    height: 300px;
+    background-image: url('trava.png'),linear-gradient(
+        to top, greenyellow , skyblue ,skyblue );
+    background-repeat: repeat-x;
+    background-position: bottom;
+    
+}
