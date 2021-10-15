@@ -1,0 +1,32 @@
+
+img{
+    width: 300px;
+    height: 200px;
+}
+figcaption{
+    text-align: center;
+    font-family: sans-serif;
+}
+figure{
+    display: inline-block;
+    border-style: solid;
+    border-color: silver;
+    margin: 1px 1px 1px 1px;
+}
+#slika1{
+    position: absolute;
+}
+#slika2{
+    position: absolute; 
+    top: 237px;
+    left: 314px;
+}
+#slika3{
+    position: absolute;
+    left: 620px;
+}
+#slika4{
+    position: absolute;
+    top:237px;
+    left:925px
+}

@@ -1,0 +1,25 @@
+//2
+db.artikli.find({
+	broj_artikala: {$gt: 0}
+},
+{
+	naziv: true, _id: false
+})
+
+//3 
+db.artikli.find({
+	_id: ObjectId("5e0e28d07bf8582054b53cac")
+})
+
+//4
+db.artikli.updateMany({
+	$and:[
+	{naziv: /^P/}, {broj_artikala: {$gt: 6}}] 
+},{
+	$inc: {broj_artikala: -7}
+})
+
+//5
+db.artikli.deleteMany({
+	broj_artikala: 0
+})

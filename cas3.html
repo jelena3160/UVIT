@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Vezbe 3</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h1> Formulari </h1>
+        <hr>
+        <form>
+            <fieldset>
+                <legend>Osnovni podaci</legend>
+           
+                <label for="imeId">Ime: </label>
+                <input type="text" name="ime" id="imeId"> 
+
+                <br><br>
+
+                <label for="prezimeId"> Prezime:</label>
+                <input type="text" name="prezime" id="prezimeId">
+
+                <br><br>
+
+                <label for="emailId"> Email:</label>
+                <input type="email" name="email" id="emailId">
+
+                 <br><br>
+
+                 Lozinka:
+                 <input type="password" name="lozinka">
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>Podaci o fakultetu</legend>
+            
+
+                Datum upisa: <input type="date" name="datum"> 
+            
+                <br><br>
+
+                Smer: <br>
+                <input type="radio" name="smer" value="mat"> Matematika <br>
+                <input type="radio" name="smer" checked value="inf"> Informatika <br>
+                <input type="radio" name="smer" value="ast"> Astronomija <br>
+
+                <br>
+
+                Zgrada u kojoj slusate predavanja: <br> 
+                <input type="checkbox" name="zgrada1" value="trg" checked> Studentski trg <br>
+                <input type="checkbox" name="zgrada2" value="jag"> Jagiceva <br>
+                <input type="checkbox" name="zgrada3" value="sn"> Svetog Nikole <br>
+
+                <br>
+
+                Smer 2: <br>
+                <select name="smer-2" multiple>
+                    <option value="mat"> Matematika</option>
+                    <option value="inf"> Informatika</option>
+                    <option value="ast"> Astronomija</option>
+                
+                </select>
+           
+                <br><br>
+
+                Utisci: <br>
+                <textarea rows="5" cols="40"> </textarea>
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend> Dodatne informacije</legend>
+        
+                Omiljeni veb pregledac: <br>
+                <input list="pregledaciId" name="omiljeni-veb-pregledac">
+                <datalist id="pregledaciId"> 
+                    <option value="Edge"></option>
+                    <option value="Firefox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                
+                </datalist>
+            </fieldset>
+
+            <br><br>
+            <input type="submit" value="Posaljite podatke">
+
+        </form>
+    </body>
+</html>

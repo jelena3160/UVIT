@@ -1,0 +1,33 @@
+@font-face {
+    font-family:Budmo ;
+    src: url('/home/jelena/Desktop/2./UVIT/zadatak1_font.ttf');
+}
+
+h1{
+    background-color: rgb(191, 58, 231);
+    font-family: Budmo;
+    text-align: center;
+    font-size: 2cm;
+}
+h3{
+    background-color: rgb(191, 58, 231);
+    text-align: center;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+p#prvi{
+    text-indent: 4mm;
+    color: rgb(45, 0, 128);
+    word-spacing: 1mm;
+    font-family: sans-serif;
+}
+span{
+    color: rgb(191, 58, 231);
+}
+
+p#drugi{
+    color: rgb(0, 128, 68);
+    font-style: italic;
+    font-family: cursive;
+    font-size: 1.3em;
+}

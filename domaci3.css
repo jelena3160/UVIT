@@ -1,0 +1,31 @@
+#omotac{
+    width: 600px;
+    height: 500px;
+    background-color: yellow;
+    border-style: solid;
+    border-color:darkslategrey;
+    border-width: 1mm;
+    position: relative;
+    z-index: -2;
+}
+#zeleni{
+    width: 600px;
+    height: 100px;
+    background-color: rgb(121, 248, 17);
+    position: absolute;
+}
+#crveni{
+    width: 120px;
+    height: 400px;
+    background-color: red;
+    position: fixed;
+    top: 100px;
+    z-index: -1;
+}
+#plavi{
+    width: 600px;
+    height: 100px;
+    background-color: royalblue;
+    position: absolute;
+    top:400px
+}

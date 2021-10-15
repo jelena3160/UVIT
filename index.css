@@ -1,0 +1,11 @@
+p{
+    color: #123444;
+    text-shadow: 10px 20px 2px violet;
+    font-family: cursive !important;
+}
+p#id{
+    color: rgba(220,4, 22, 1);
+    background-color: rosybrown;
+    font-style: oblique;
+    text-shadow: 10px 20px 2px palegoldenrod;
+}

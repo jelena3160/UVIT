@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Always In My Heart';
+    src: url(/home/jelena/Desktop/2./UVIT/zadatak2_font.ttf);
+}
+
+h1{
+    font-family: 'Always In My Heart';
+    text-align: center;
+    font-size: 0.8in;
+}
+#model{
+    background-color: rgba(59, 163, 91, 0.822);
+    text-align: center;
+    font-weight: bold;
+
+}
+h2{
+    font-style: italic;
+}
+#prvi{
+    color: red;
+    text-indent: 5mm;
+    font-family: sans-serif;
+    word-spacing: 2mm;
+}
+span{
+    color:rgba(59, 163, 91, 0.822);
+}
+#drugi{
+    color: red;
+    font-family: cursive;
+    font-size: 1.5em;
+    border-style: solid;
+    border-color: rgba(59, 163, 91, 0.822);
+    border-radius: 10px;
+    padding: 10px 20px 20px 10px;
+    border-width: 0.5mm;
+
+}
+#datum{
+    text-align: center;
+    border-style: solid;
+    border-color: red;
+    padding: 10px;
+    border-width: 0.5mm;
+    
+}
+body{
+    border-style: none dotted solid dotted;
+    border-color: red;
+    padding: 20px;
+
+}

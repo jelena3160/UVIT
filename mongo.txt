@@ -1,0 +1,82 @@
+//1
+db.students.find({
+		name: "Jovana"	
+	}
+)
+
+//2
+db.students.find({
+	name: "Jovana",	
+	avg_grade: 8.5
+	}
+)
+
+//3
+db.students.find({
+	avg_grade: {
+		$gt: 8.5
+	}
+})
+
+//4
+db.students.find({
+	avg_grade: {
+		$gte: 8,
+		$lte: 9
+	}
+})
+
+//5
+db.students.find({
+	major: {
+		$in: ["Informatika", "Racunarstvo i informatika"]
+	}
+})
+
+//6
+db.students.find({
+	$and:[
+	{	
+		avg_grade:{
+			$gt: 8.0
+		}
+	},
+	{
+		major: "Informatika"
+	}]
+})
+
+//7
+db.students.find({
+	$and:[
+	{$or: [{avg_grade: 9.0}, {avg_grade: 10.0}]},
+	{$or: [{major:"Informatika"}, {major:"Racunarstvo i informatika"}]}
+	]
+})
+
+//8
+db.students.find({
+	surname: /^P/
+})
+
+//9
+db.students.find({
+	surname: /^P/
+},
+{
+	name: 1, surname: 1, avg_grade: true, _id: false	
+})
+
+//10
+db.students.updateMany({
+	$and:[
+		{major: {$in: ["Informatika", "Racunatstvo i informatika"]}},
+		{avg_grade: {$gt: 9.5}}
+	]
+},
+{
+	$set: {
+		note:"Izvanredni studenti informatike"
+	}
+}
+)

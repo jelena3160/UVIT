@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Liste </title>
+        <meta charset="UTF-8">
+        <style>
+            ul{
+                border: 1px solid pink;
+            }
+            ul li{
+                list-style-type: circle;
+                background-color: pink;
+                color:turquoise;
+                list-style-position:inside;
+                font-size: 25px;
+                
+            }
+            ol li{
+                list-style-type: upper-roman;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        <h1> Nenumerisane liste</h1>
+        <p>Meni francuskog restorana:</p> 
+        <ul>
+            <li>French toast</li>
+            <li>French Crepes</li>
+        </ul>
+
+        <h1>Numerisane liste</h1>
+        <p>HTML:</p>
+        <ol start="4">
+            <li> Liste</li>
+            <li> Tabele</li>
+            <li> Veze</li>
+            <li> Pseudoklase</li>
+
+        </ol>
+
+        <h1>Opisne liste</h1>
+        <p>Omiljene stvari:</p>
+        <dl> 
+            <dt>Omiljeno pice</dt> <!-- data term-->
+            <dd>Kafa</dd> <!--data descripton-->
+            <dt>Omiljena hrana</dt>
+            <dd>Pica</dd>
+        </dl>
+
+        <h1>Ugnjezdjene liste</h1>
+        <p>Nasumicna lista</p>
+        <ul> 
+            <li> stavka1
+                <ol>
+                    <li> why not</li>
+                </ol>
+            </li>
+            <li> stavka2</li>
+            <li> stavka3
+                <ul>
+                    <li>podlista1</li>
+                    <li>podlista2</li>
+                </ul>
+            </li>
+
+        </ul>
+    </body>
+</html>

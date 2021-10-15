@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabele</title>
+        <meta charset="UTF-8">
+        <style>
+            table{
+                border: 1px solid rosybrown;
+                border-collapse: collapse;
+                text-align: center;
+                caption-side: bottom;
+                
+            }
+            td, th {
+                border: 1px solid rosybrown;
+                height: 50px;
+                width: 50px;
+            }
+            #specijalni{
+                width: 200px;
+                height: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Tabele</h1>
+
+        <table>
+            <caption>Tabela 1:informacije o vitaminima</caption>
+            <thead>
+                <tr>
+                    <th>Vitamin</th>
+                    <th>Naziv</th>
+                    <th>Rastvorljivost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C</td>
+                    <td id="specijalni">Askorbinska kiselina</td>
+                    <td>Voda</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>Kalciferol</td>
+                    <td>Masti</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <br><br>
+
+        <table id="druga">
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td colspan="2">2</td>
+                    <!-- <td>3</td> -->
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <!-- <td>1</td> -->
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
